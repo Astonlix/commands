@@ -1,3 +1,10 @@
-local part = game:GetService("CoreGui").ScreenGui
+getgenv().Enabled = false
+        local part = game:GetService("CoreGui").ScreenGui
         part:Destroy()
         workspace.Part:Destroy()
+        for i,v in pairs(workspace:GetDescendants()) do 
+	if (v:IsA("Seat")) or (v:IsA("VehicleSeat")) then 
+		v.Disabled = true
+		setfpscap(999)
+        	end
+        end
