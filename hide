@@ -1,3 +1,2 @@
-local part = game:GetService("CoreGui").ScreenGui
-        part:Destroy()
-        workspace.Part:Destroy()
+game:GetService("CoreGui").ScreenGui:Destroy()
+workspace.game:GetService("CoreGui").ScreenGui:Destroy()
