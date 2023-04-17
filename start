@@ -1,0 +1,6 @@
+getgenv().Enabled = true
+
+if Enabled == true then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Astonlix/commands/main/cpu-saver"))()
+end
+
