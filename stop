@@ -1,13 +1,9 @@
-getgenv().Enabled = false
+Enabled = false
 
-if Enabled == false then
-    local part = game:GetService("CoreGui").ScreenGui
-        part:Destroy()
-        workspace.Part:Destroy()
-        
-        for i,v in pairs(workspace:GetDescendants()) do 
+local part = game:GetService("CoreGui").ScreenGui; part:Destroy(); workspace.Part:Destroy()
+
+for i,v in pairs(workspace:GetDescendants()) do 
 	if (v:IsA("Seat")) or (v:IsA("VehicleSeat")) then 
 		v.Disabled = true
-        end
-    end
+	end
 end
